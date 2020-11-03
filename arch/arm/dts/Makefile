@@ -566,7 +566,8 @@ dtb-$(CONFIG_MX6QDL) += \
 	imx6qp-sabresd.dtb \
 	imx6dl-pico.dtb \
 	imx6q-pico.dtb \
-	imx6qp-wandboard-revd1.dtb
+	imx6qp-wandboard-revd1.dtb \
+	mx6dsysd.dtb
 
 dtb-$(CONFIG_MX6SL) += imx6sl-evk.dtb
 

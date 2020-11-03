@@ -321,6 +321,17 @@ config TARGET_MX6SABRESD
 	select SUPPORT_SPL
 	imply CMD_DM
 
+config TARGET_MX6DSYSD
+	bool "mx6dsysd"
+	select MX6QDL
+	select MX6DL
+	select BOARD_LATE_INIT
+	select SUPPORT_SPL
+	select PINCTL
+	select DM
+	select DM_THERMAL
+	select BOARD_EARLY_INIT_F
+
 config TARGET_MX6SLEVK
 	bool "mx6slevk"
 	select MX6SL
@@ -621,5 +632,6 @@ source "board/udoo/Kconfig"
 source "board/udoo/neo/Kconfig"
 source "board/wandboard/Kconfig"
 source "board/warp/Kconfig"
+source "board/talenuse/mx6dsysd/Kconfig"
 
 endif
