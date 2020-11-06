@@ -586,7 +586,7 @@ int board_spi_cs_gpio(unsigned bus, unsigned cs)
 	return (bus == 0 && cs == 0) ? (IMX_GPIO_NR(4, 9)) : -1;
 }
 #endif
-
+#if 0
 int power_init_board(void)
 {
 	struct pmic *p;
@@ -606,7 +606,7 @@ int power_init_board(void)
 
 	return pfuze_mode_init(p, APS_PFM);
 }
-
+#endif
 #ifdef CONFIG_CMD_BMODE
 static const struct boot_mode board_boot_modes[] = {
 	/* 4 bit bus width */

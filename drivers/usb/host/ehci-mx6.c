@@ -294,7 +294,7 @@ int __weak board_usb_phy_mode(int port)
  * Return: 0 Success
  */
 int __weak board_ehci_hcd_init(int port)
-{
+{	
 	return 0;
 }
 
@@ -310,7 +310,7 @@ int __weak board_ehci_hcd_init(int port)
  */
 int __weak board_ehci_power(int port, int on)
 {
-	return 0;
+		return 0;
 }
 
 int ehci_mx6_common_init(struct usb_ehci *ehci, int index)

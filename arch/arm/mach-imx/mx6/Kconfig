@@ -322,15 +322,15 @@ config TARGET_MX6SABRESD
 	imply CMD_DM
 
 config TARGET_MX6DSYSD
-	bool "mx6dsysd"
-	select MX6QDL
-	select MX6DL
+	bool "Support Talenuse imx6dl"
+	select BOARD_EARLY_INIT_F
 	select BOARD_LATE_INIT
-	select SUPPORT_SPL
-	select PINCTL
 	select DM
 	select DM_THERMAL
-	select BOARD_EARLY_INIT_F
+	select DM_SERIAL
+	select MX6QDL
+	select SUPPORT_SPL
+	imply CMD_DM
 
 config TARGET_MX6SLEVK
 	bool "mx6slevk"

@@ -68,11 +68,13 @@
 #define CONFIG_SYS_NAND_ONFI_DETECTION
 
 /* DMA stuff, needed for GPMI/MXS NAND support */
-
+#if 0
 /* PMIC */
 #define CONFIG_POWER
 #define CONFIG_POWER_I2C
 #define CONFIG_POWER_PFUZE100
 #define CONFIG_POWER_PFUZE100_I2C_ADDR	0x08
+#endif
+#undef CONFIG_LDO_BYPASS_CHECK   /*PJ*/
 
 #endif                         /* __MX6SABREAUTO_CONFIG_H */

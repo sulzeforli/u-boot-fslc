@@ -30,7 +30,7 @@
 
 #define CONFIG_SYS_FSL_USDHC_NUM	3
 #if defined(CONFIG_ENV_IS_IN_MMC)
-#define CONFIG_SYS_MMC_ENV_DEV		1	/* SDHC3 */
+#define CONFIG_SYS_MMC_ENV_DEV		2	/* SDHC4 */
 #endif
 
 #ifdef CONFIG_CMD_PCI
@@ -47,12 +47,14 @@
 #define CONFIG_SYS_I2C_MXC_I2C2		/* enable I2C bus 2 */
 #define CONFIG_SYS_I2C_MXC_I2C3		/* enable I2C bus 3 */
 #define CONFIG_SYS_I2C_SPEED		  100000
-
+#if 0
 /* PMIC */
 #define CONFIG_POWER
 #define CONFIG_POWER_I2C
 #define CONFIG_POWER_PFUZE100
 #define CONFIG_POWER_PFUZE100_I2C_ADDR	0x08
+#endif
+#undef CONFIG_LDO_BYPASS_CHECK   /*PJ*/
 
 /* USB Configs */
 #ifdef CONFIG_CMD_USB
